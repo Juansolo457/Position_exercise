@@ -1,0 +1,86 @@
+/* Breakdown of Getting nav bar  + img to display inline, fixed at the top of the page. FOR THINKFUL POSITION PROP EX */
+* {
+  text-decoration: none; 
+}
+/*Ben had this in another css doc, for other assignments probably. */
+
+.container {
+  padding-left: 100px;
+  padding-right: 100px;   
+ }
+
+
+nav {
+  height: 60px;
+  background-color: orange;
+  position: fixed; 
+  width: 100%;
+}
+
+/* targeting both the nav + icon-img class??  */
+nav .icon-img {
+  height: 50px; 
+  margin-top: 5px; 
+  margin-bottom: 5px; 
+  border-radius: 50%;
+  vertical-align: middle; 
+/* Hello its vertical haha   */
+/* middle in relation to nav bar!!   */
+  border: 1px solid black;  
+}
+
+ nav ul {
+  display: inline-block; 
+  list-style: none; 
+}
+
+ nav li {
+  display: inline-block; 
+}
+ 
+nav li::after {
+  content: "|";
+  margin-left: 5px;
+}
+
+nav a:hover {
+  color: black; 
+}
+
+body {
+  background: url(https://i.ytimg.com/vi/UEYp1RTvllM/maxresdefault.jpg) no-repeat; 
+  background-size: cover; 
+}
+/* for padding from the nav bar!  */
+main {
+  /*border: 10px dotted green;*/
+  padding-top: 90px; 
+  min-width: 100px; 
+/* min width means that main will never become smaller than 100px   */
+}
+/*  target box class, set attr for both boxes. */
+.box { 
+  margin-top: 150px;   
+  width: 600px;
+  height: 300px;   
+  position: relative;    
+  border: 10px dotted green; 
+  margin-left: auto;  
+  margin-right: auto;   
+/* top 2 margin props center the 2 images.    */
+  
+}
+.winston, .hanzo {
+  position: absolute; 
+  width: 200px; 
+}
+
+.winston {
+  top: -90px; 
+  left: -90px;
+}
+
+.hanzo {
+  bottom: -120px;
+  right: -60px; 
+}
